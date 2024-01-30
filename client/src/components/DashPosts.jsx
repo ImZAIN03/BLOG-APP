@@ -109,7 +109,7 @@ export default function DashPosts() {
                       {post.title}
                     </Link>
                   </Table.Cell>
-                  <Table.Cell>{post.category}</Table.Cell>
+                  <Table.Cell className='text-sky-500 font-semibold'>{post.category}</Table.Cell>
                   <Table.Cell>
                     <span
                       onClick={() => {
@@ -136,7 +136,7 @@ export default function DashPosts() {
           {showMore && (
             <button
               onClick={handleShowMore}
-              className='w-full text-teal-500 self-center text-sm py-7'
+              className='w-full text-teal-700 self-center text-sm py-7'
             >
               Show more
             </button>
