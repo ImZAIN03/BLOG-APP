@@ -121,7 +121,7 @@ export default function UpdatePost() {
             onChange={(e) =>
               setFormData({ ...formData, title: e.target.value })
             }
-            value={formData.title}
+            value={formData.title || ''}
           />
           <Select
             onChange={(e) =>
